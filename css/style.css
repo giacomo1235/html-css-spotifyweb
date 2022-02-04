@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+body::after {
+    content: "";
+  clear: both;
+  display: table;
+}
+
+header {
+    width: 90%;
+    height: 4em;
+    background-color: rgba(0%, 0%, 0%, .5); 
+    float: right;   
+}
+
+.sidebar {
+    width: 10%;
+    height: calc(100vh - 4em);
+    background-color: gold;
+    float: left;
+}
+
+.section-main {
+    width: 90%;
+    background-color: burlywood;
+    height: calc(100vh - 8em);
+    float: right;
+}
+
+.footer {
+    width: 100%;
+    height: 4em;
+    background-color: darkgoldenrod;
+}
+
+
+
+
