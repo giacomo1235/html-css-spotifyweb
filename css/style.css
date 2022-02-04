@@ -17,17 +17,60 @@ body {
 
 
 header {
-    width: 20%;
-    height: 100vh;
-    background-color: darkgoldenrod;
+    display: flex;
+    width: 250px;
+    height: calc(100vh - 4em);
+    background-color: black;
+    flex: 0 1 auto;
     
+}
+
+header .logo {
+    width: 200px;
+}
+
+nav {
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+.navbar ul,
+.navbar1 ul {
+    list-style: none;
+}
+
+.navbar li,
+.navbar1 li {
+    line-height: 2em;
+}
+
+.navbar a,
+.navbar1 a {
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar1 i {
+    padding: 1em;
+    background-color: gray;
+    color: black;
+}
+
+.navbar1 h1 {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+header button {
+    justify-self: flex-end;
 }
 
 .section-main {
     display: flex;
-    width: 80%;
-    height: 100vh;
+    width: 900px;
+    height: calc(100vh + 4em);
     background-color: gold;
+    flex: 1 1 auto;
        
 }
 
