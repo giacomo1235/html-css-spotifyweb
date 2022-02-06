@@ -58,6 +58,7 @@ nav {
     color: white;
     border-left: 2px solid greenyellow;
     padding-left: 1em;
+    transition: all .4s ease;
 }
 
 .navbar1 i {
@@ -74,7 +75,8 @@ nav {
 .libreria,
 .home,
 .download,
-.profile {
+.profile,
+.search {
     width: 18px;
     height: 16px;
     line-height: 1em;
