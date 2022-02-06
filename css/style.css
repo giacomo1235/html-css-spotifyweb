@@ -18,15 +18,18 @@ body {
 
 header {
     display: flex;
-    width: 250px;
-    height: calc(100vh - 4em);
+    flex-direction: column;
+    width: 200px;
+    height: calc(100vh + 4em);
     background-color: black;
     flex: 0 1 auto;
+    
     
 }
 
 header .logo {
-    width: 200px;
+    width: 150px;
+    margin-top: 1em;
 }
 
 nav {
@@ -50,6 +53,13 @@ nav {
     color: gray;
 }
 
+.navbar a:hover,
+.navbar1 a:hover {
+    color: white;
+    border-left: 2px solid greenyellow;
+    padding-left: 1em;
+}
+
 .navbar1 i {
     padding: 1em;
     background-color: gray;
@@ -61,8 +71,50 @@ nav {
     line-height: 2em;
 }
 
-header button {
-    justify-self: flex-end;
+.libreria,
+.home,
+.download,
+.profile {
+    width: 18px;
+    height: 16px;
+    line-height: 1em;
+}
+.download,
+.profile {
+    margin-right: .5em;
+}
+
+.profile {
+    background-color: gray;
+    border-radius: 50%;
+}
+
+header .btn{
+   position: fixed;
+   left: 0;
+   background-color: transparent;
+   border: none;
+   
+   
+}
+
+header .instal-btn {
+    display: flex;
+    align-items: center;
+    bottom: 7em;
+    color: gray;
+    border-bottom: 1px solid gray;
+    padding-right: 8em ;
+    padding-bottom: 1em;
+    
+}
+
+
+header .user {
+    bottom: 4em;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
 }
 
 .section-main {
