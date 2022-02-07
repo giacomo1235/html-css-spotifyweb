@@ -27,9 +27,8 @@ html {
 	height: 100vh;
 }
 
-.nav-header {
+header {
 	background-color: black;
-    width: 200px;
 }
 
 header .logo {
@@ -217,7 +216,7 @@ header .user {
     justify-content: flex-start;
 }
 
-.recently-played .prova1 {
+.recently-played .content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -227,7 +226,7 @@ header .user {
     width: calc(100vw / 6 - 3em);
 }
 
-.prova1 .playlist {
+.content .playlist {
     flex: 0 0 0 ;
 }
 
@@ -252,6 +251,10 @@ header .user {
 }
 .main-content {
 	flex: 1 0 0;
+}
+
+.circle {
+    border-radius: 50%;
 }
 .player {
 	flex: 0 0 100%;
