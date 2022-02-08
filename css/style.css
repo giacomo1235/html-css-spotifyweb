@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 540px) {
 	:root {
-		--width-header: 10rem;
+		--width-header: 14rem;
 	}
 
   
@@ -31,30 +31,120 @@ html {
 
 header {
 	background-color: black;
+    width: var(--width-header);
 }
 
 
 .nav-header nav {
-    min-height: 500px;
     height: 100%;
+    min-height: 500px;
 }
 
-.nav-header .navbar {
+.nav-header .nav-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     list-style: none;
+    gap: 1rem;
+    list-style: none;
 
 
+}
+
+
+.nav-list li {
+    opacity: .5;
+}
+.nav-list .item-logo {
+    opacity: 1;
+}
+.nav-list li:hover {
+    opacity: 1;
+}
+
+.nav-header .nav-list a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-header .item-logo {
+    margin-top: .5rem;
 }
 
 .nav-header .spaced {
     margin-top: auto;
 }
 
+.nav-header img {
+    width: 2.5rem;
+    
+}
 
-.navbar li,
+.img-download {
+    width: 1rem;
+    height: 1rem;
+}
+
+.profile {
+    background-color: gray;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.spaced {
+    border-bottom: 1px solid white ;
+    padding-bottom: 10px;
+}
+
+.hidden-xs {
+    display: none;
+}
+
+@media screen and (min-width: 540px) {
+    .hidden-xs {
+        display: block;
+    }
+
+    .visible-xs {
+        display: none;
+    }
+
+    .nav-header .nav-list {
+        align-items: flex-start;
+    }
+
+    .nav-header .nav-list li {
+        padding-left: 2rem;
+    }
+
+    .nav-header .nav-list li.active {
+        border-left: 3px solid greenyellow;
+
+    }
+
+
+    .nav-header .nav-list a {
+        display: flex;
+        align-items: center;
+
+        
+    }
+
+   .nav-header .logo-big {
+        width: 190px;
+    }
+
+}
+
+
+
+
+/* .navbar li,
 .navbar1 li {
    margin-bottom: .8rem;
    list-style: none;
@@ -62,13 +152,15 @@ header {
 
 
 .navbar a,
-.navbar1 a {
+.navbar1 a,
+.navbar2 a {
     text-decoration: none;
     opacity: .6;
 }
 
 .navbar a:hover,
-.navbar1 a:hover {
+.navbar1 a:hover,
+.navbar2 a:hover {
     color: white;
     opacity: 1;
     
@@ -91,24 +183,12 @@ header {
     line-height: 2em;
 }
 
-.hidden-xs {
-    display: none;
-}
 
-@media screen and (min-width:540px) {
-    .hidden-xs {
-        display: block;
-        color: white;
-    }
-    .nav-header .navbar a {
-        display: flex;
-       
-    }
-}
+
+
 
 .libreria,
 .home,
-.img-download,
 .search,
 .logo-small {
     width: 2em;
@@ -125,10 +205,7 @@ header {
     margin-right: .5em;
 }
 
-.profile {
-    background-color: gray;
-    border-radius: 50%;
-}
+
 
 header .btn{
    position: fixed;
@@ -154,7 +231,7 @@ header .user {
     font-size: 1em;
     color: white;
 }
-
+ */
 .main-content {
 	background-color: rgb(8%, 10%, 13%);
 }
@@ -177,6 +254,7 @@ header .user {
 	z-index: 10;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .overlay-upgrade button {
     padding: 0px 20px;
@@ -219,15 +297,12 @@ header .user {
 }
 
 .navbar2 a {
-    color: grey;
+    color: white;
     text-decoration: none;
     font-weight: bolder;
+    opacity: .6;
 }
 
-.navbar2 a:hover { 
-    border-bottom: 3px solid greenyellow;
-    color: white;
-}
 
 
 
