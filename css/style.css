@@ -8,6 +8,8 @@
 	:root {
 		--width-header: 10rem;
 	}
+
+  
 }
 
 * {
@@ -31,39 +33,47 @@ header {
 	background-color: black;
 }
 
-header .logo {
-    width: 150px;
-    margin-top: 1em;
+
+.nav-header nav {
+    min-height: 500px;
+    height: 100%;
 }
 
-nav {
-    margin-top: 1.5em;
-    margin-left: .5em;
-}
-
-.navbar ul,
-.navbar1 ul {
+.nav-header .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
     list-style: none;
+
+
 }
+
+.nav-header .spaced {
+    margin-top: auto;
+}
+
 
 .navbar li,
 .navbar1 li {
-    line-height: 2em;
+   margin-bottom: .8rem;
+   list-style: none;
 }
+
 
 .navbar a,
 .navbar1 a {
     text-decoration: none;
-    color: gray;
+    opacity: .6;
 }
 
 .navbar a:hover,
 .navbar1 a:hover {
     color: white;
-    border-left: 2px solid greenyellow;
-    padding-left: 1em;
-    transition: all .4s ease;
+    opacity: 1;
+    
 }
+
 
 
 .navbar1 {
@@ -81,13 +91,28 @@ nav {
     line-height: 2em;
 }
 
+.hidden-xs {
+    display: none;
+}
+
+@media screen and (min-width:540px) {
+    .hidden-xs {
+        display: block;
+        color: white;
+    }
+    .nav-header .navbar a {
+        display: flex;
+       
+    }
+}
+
 .libreria,
 .home,
-.download,
-.search {
-    width: 18px;
-    height: 16px;
-    line-height: 1em;
+.img-download,
+.search,
+.logo-small {
+    width: 2em;
+    height: 2em;
 }
 
 .profile {
@@ -162,15 +187,11 @@ header .user {
     border-radius: 4em;
     text-transform: uppercase;
     justify-self: flex-end;
-}
-
-.overlay-upgrade button a {
-    text-decoration: none;
     color: white;
 }
 
-.overlay-upgrade button a:hover {
-    font-weight: bolder;
+.overlay-upgrade button:hover {
+ transform: scale(1.1);
     
 }
 
@@ -208,31 +229,39 @@ header .user {
     color: white;
 }
 
-.recently-played {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
 
-}
 
 .recently-played .content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
- 
-}
-.playlist {
-    text-align: center;
-}
-.playlist img {
-    width: calc(100vw / 6 - 3em);
+    justify-content: space-around; 
+    width: 100%;
+   
 }
 
-.content .playlist {
-    flex: 0 0 0 ;
+.playlist {
+    width: calc(100vh / 6);
+    text-align: center;
+
 }
+.playlist img {
+    width: 100%;
+}
+
+.playlist h2 {
+    font-size: 1em;
+}
+
+.playlist p {
+    font-size: .8em;
+    color: gray;
+}
+
+.playlist:hover {
+    opacity: 1;
+}
+
 
 .nav-header {
 	overflow: hidden;
@@ -358,7 +387,7 @@ footer {
     border-radius: 0.5em;
   }
   
-  .progress-bar:hover {
+  .progress_bar:hover {
     background-color: green;
 }
 

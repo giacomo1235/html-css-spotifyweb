@@ -16,18 +16,52 @@
 
 <body class="container">
     <header class="nav-header">
-        <div class="logo">
-            <img src="img/logo.svg" alt="logo spotify">
-        </div>
         <nav class="navbar">
             <ul>
-                <li><a href="#!"> <img src="img/home.svg" alt="logo casa" class="home"> Home</a></li>
-                <li><a href="#!"><img src="img/search.svg" alt="logo search" class="search"> Cerca</a></li>
-                <li><a href="#!"> <img src="img/libreria.svg" alt="logo libreiria" class="libreria"> La tua libreria</a>
+                <li>
+                    <a href="#!">
+                        <img class="logo-small" src="img/logo-small.svg" alt="logo small">
+                        <div class="hidden-xs"><img src="img/logo.svg" alt="logo spotify"></div>
+                    </a>
                 </li>
+                <li>
+                    <a href="#!">
+                        <img src="img/home.svg" alt="logo casa" class="home">
+                        <div class="hidden-xs">Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <img src="img/search.svg" alt="logo search" class="search">
+                        <div class="hidden-xs">Cerca</div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#!">
+                        <img src="img/libreria.svg" alt="logo libreiria" class="libreria">
+                        <div class="hidden-xs">la tua libreria</div>
+                    </a>
+                </li>
+
+                <li class="spaced">
+                    <a href="#!">
+                        <img class="img-download" src="img/download.svg" alt="download">
+                        <div class="hidden-xs">installa app</div>
+                    </a>
+                </li>
+
+                <li class="round">
+                    <a href="#!">
+                        <img class="profile" src="img/profile.svg" alt="profilo">
+                        <div class="hidden-xs">John Doe</div>
+                    </a>
+                </li>
+                
+                
             </ul>
         </nav>
-        <nav class="navbar1">
+        <!-- <nav class="navbar1 hidden-xs">
             <h1>PLAYLIST</h1>
             <ul>
                 <li><a href="#!"><i class="fas fa-plus"></i> Crea Playlist</a></li>
@@ -39,13 +73,13 @@
                 <li><a href="#!">Nome Playlist</a></li>
                 <li><a href="#!">Nome Playlist</a></li>
             </ul>
-        </nav>
-        <button class="btn instal-btn">
+        </nav> -->
+       <!--  <button class="btn instal-btn">
             <img src="img/download.svg" alt="logo download" class="download"> Installa app
         </button>
         <button class="btn user">
             <img src="img/profile.svg" alt="logo profilo" class="profile"> John Doe
-        </button>
+        </button> -->
 
     </header>
 
@@ -99,7 +133,7 @@
                 </div>
             </div>
 
-            <div class="recently-played">
+            <div class="recently-played johndoe">
                 <h1>Creato per John Doe</h1>
                 <p>più ascolti, più accurati saranno i suggerimenti</p>
                 <div class="content">
@@ -115,7 +149,7 @@
                 </div>
             </div>
 
-            <div class="recently-played">
+            <div class="recently-played popolari">
                 <h1>Artisti più popolari</h1>
                 <p>più ascolti, più accurati saranno i suggerimenti</p>
                 <div class="content">
@@ -171,7 +205,7 @@
     </footer>
 
     <div class="overlay-upgrade"> <button>
-            <a href="#!">effettua l'upgrade</a>
+            effettua l'upgrade
         </button></div>
 </body>
 
