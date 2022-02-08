@@ -15,38 +15,47 @@
 </head>
 
 <body class="container">
+    <!-- header -->
     <header class="nav-header">
-        <nav >
+        <!-- navbar -->
+        <nav>
             <ul class="nav-list">
+                <!-- logo -->
                 <li class="nav-item item-logo">
                     <a href="#!">
                         <img class="logo-small visible-xs" src="img/logo-small.svg" alt="logo small">
-                        <div ><img class="logo-big hidden-xs" src="img/logo.svg" alt="logo spotify"></div>
+                        <div><img class="logo-big hidden-xs" src="img/logo.svg" alt="logo spotify"></div>
                     </a>
                 </li>
+                <!-- / logo -->
+                <!-- home -->
                 <li class="nav-item active">
                     <a href="#!">
                         <img src="img/home.svg" alt="logo casa" class="home">
                         <div class="hidden-xs">Home</div>
                     </a>
                 </li>
+                <!-- / home -->
+                <!-- search -->
                 <li class="nav-item">
                     <a href="#!">
                         <img src="img/search.svg" alt="logo search" class="search">
                         <div class="hidden-xs">Cerca</div>
                     </a>
                 </li>
-                
+                <!-- / search -->
+                <!-- library -->
                 <li class="nav-item">
                     <a href="#!">
                         <img src="img/libreria.svg" alt="logo libreiria" class="libreria">
                         <div class="hidden-xs">la tua libreria</div>
                     </a>
                 </li>
-
+                <!-- library -->
+                <!-- navbar playlist -->
                 <li class="container-playlist hidden-xs">
                     <h3>Playlist</h3>
-                    
+
                     <ul class="playlist-list">
                         <li class="playlist-item"><a href="#!"><i class="fas fa-plus"></i> Crea Playlist</a></li>
                         <li class="playlist-item"><a href="#!">Nome Playlist</a></li>
@@ -58,31 +67,36 @@
                         <li class="playlist-item"><a href="#!">Nome Playlist</a></li>
                     </ul>
                 </li>
-
+                <!-- / navbar playlist -->
+                <!-- download -->
                 <li class="nav-item spaced">
                     <a href="#!">
                         <img class="img-download" src="img/download.svg" alt="download">
-                        <div class="hidden-xs">installa app</div>
+                        <div class="hidden-xs">installa app
+                        </div>
                     </a>
                 </li>
-
+                <!-- / download  -->
+                <!-- user -->
                 <li class="nav-item">
-                    <a href="#!">
+                    <a class="profilo" href="#!">
                         <img class="profile" src="img/profile.svg" alt="profilo">
-                        <div class="hidden-xs">John Doe</div>
+                        <div class="hidden-xs white">John Doe</div>
                     </a>
                 </li>
-                
-                
+                <!-- / user -->
+
             </ul>
         </nav>
+        <!-- / navbar -->
 
     </header>
+    <!-- / header -->
 
     <main class="main-content">
         <div class="content">
 
-
+            <!-- central navbar -->
             <nav class="navbar2">
                 <ul class="main-navbar">
                     <li class="main-navbar-item"><a href="#!">in evidenza</a></li>
@@ -93,78 +107,106 @@
                     <li class="main-navbar-item"><a href="#!">scopri</a></li>
                 </ul>
             </nav>
+            <!-- / central navbar -->
+            <!-- recently played -->
             <div class="main-playlist recently-played">
                 <h1>Recently played</h1>
                 <div class="content1">
+                    <!-- playlist 1 -->
                     <div class="playlist">
                         <img src="img/metal_lifting.jpg" alt="heavy metal">
+                        <!--  <i class="far fa-play-circle"></i> -->
                         <h2>Heavy Metal</h2>
                         <p>Subtitle</p>
                     </div>
+                    <!-- / playlist 1 -->
+                    <!--  playlist 2 -->
                     <div class="playlist">
                         <img src="img/stranger.jpeg" alt="copertina stranger things">
                         <h2>Stranger Things, Vol. 1 (a Netflix Original Series soundtrack</h2>
                         <p>Kyle Dixon & Michael Stein</p>
                     </div>
+                    <!-- / playlist 2 -->
+                    <!-- playlist 3 -->
                     <div class="playlist">
                         <img src="img/aquietplace.jpeg" alt="copertina a quiet place">
                         <h2>A quiet place</h2>
                         <p>Subtitle</p>
                     </div>
+                    <!-- / playlist 3 -->
+                    <!-- playlist 4 -->
                     <div class="playlist">
                         <img src="img/split.jpeg" alt="heavy metal">
                         <h2>Split</h2>
                         <p>Subtitle</p>
                     </div>
+                    <!--  / playlist 4 -->
+                    <!-- playlist 5 -->
                     <div class="playlist">
                         <img src="img/cure.jpeg" alt="copertina a cure for wellness">
                         <h2>A cure for wellness</h2>
                         <p>Subtitle</p>
                     </div>
+                    <!-- / playlist 5 -->
+                    <!-- playlist 6 -->
                     <div class="playlist">
                         <img src="img/sinister.jpeg" alt="heavy metal">
                         <h2>Sinister</h2>
                         <p>Subtitle</p>
                     </div>
+                    <!-- / playlist 6 -->
                 </div>
             </div>
-
+            <!-- / recently played -->
+            <!-- creato per john doe -->
             <div class="main-playlist johndoe">
                 <h1>Creato per John Doe</h1>
                 <p>più ascolti, più accurati saranno i suggerimenti</p>
                 <div class="content1">
+                    <!-- playlist 1 -->
                     <div class="playlist">
                         <img src="img/radar.jpeg" alt="copertina relase radar">
                         <h2>Relase Radar</h2>
-
                     </div>
+                    <!-- / playlist 1 -->
+                    <!-- playlist 2 -->
                     <div class="playlist">
                         <img src="img/mixdaily.jpeg" alt="copertina daily mix">
                         <h2>Daily mix 1</h2>
                     </div>
+                    <!-- / playlist 2 -->
                 </div>
             </div>
+            <!-- / creato per john doe -->
 
+            <!-- artisti piu poopolari -->
             <div class="main-playlist popolari">
                 <h1>Artisti più popolari</h1>
                 <p>più ascolti, più accurati saranno i suggerimenti</p>
                 <div class="content1">
+                    <!-- artista 1 -->
                     <div class="playlist ">
                         <img class="circle" src="img/youg.jpeg" alt="heavy metal">
                         <h2>Lana del Ray</h2>
                         <p>Subtitle</p>
                     </div>
+                    <!-- / artista 1 -->
+                    <!-- artista 2 -->
                     <div class="playlist">
                         <img class="circle" src="img/einaudi.jpeg" alt="heavy metal">
                         <h2>Ludovico Einaudi</h2>
                         <p>Subtitle</p>
                     </div>
+                    <!-- / artista 2 -->
                 </div>
             </div>
+            <!-- / artisti piu poopolari -->
         </div>
     </main>
-
+    <!-- / main -->
+    <!-- footer -->
     <footer class="player">
+        <!-- col-left -->
         <div class="col-left">
             <img src="img/sinister.jpeg" alt="sinister mini">
             <div class="album-title">
@@ -173,6 +215,8 @@
             </div>
             <i class="far fa-heart"></i> <i class="far fa-folder"></i>
         </div>
+        <!-- / col left -->
+        <!-- player audio -->
         <div class="col-middle">
             <div class="player-audio">
                 <a href="#!"><i class="fas fa-random"></i></a> <a href="#!"><i class="fas fa-step-backward"></i></a> <a
@@ -182,27 +226,38 @@
             <div class="bar">
                 <p>0:25</p>
                 <div class="progress">
-                    <a href="#!"><div class="progress_bar"></div></a>
+                    <a href="#!">
+                        <div class="progress_bar"></div>
+                    </a>
                 </div>
                 <p>0:40</p>
             </div>
 
 
         </div>
+        <!-- / player audio -->
+        <!-- col right -->
         <div class="col-right">
             <div class="icons-right">
                 <i class="fas fa-list-ul"></i> <i class="fas fa-tv"></i> <i class="fas fa-volume-up"></i>
             </div>
             <div class="progress">
-                <a href="#!"><div class="progress_bar"></div></a>
+                <a href="#!">
+                    <div class="progress_bar"></div>
+                </a>
             </div>
         </div>
-
+        <!-- col right -->
     </footer>
-
-    <div class="overlay-upgrade"> <button>
+    <!-- / footer -->
+    <!-- call to action -->
+    <div class="overlay-upgrade">
+        <button>
             effettua l'upgrade
-        </button></div>
+        </button>
+    </div>
+    <!-- / call to action -->
+
 </body>
 
 </html>
