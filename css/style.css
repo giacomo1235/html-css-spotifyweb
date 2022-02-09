@@ -291,9 +291,13 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.content1 .playlist {
+    margin-left: 1em; 
 }
 
 .johndoe .content1,
